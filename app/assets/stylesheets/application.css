@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+   margin-bottom: 50px;
+   font-family: 'Lato', sans-serif;
+ }
+
+ h2, h3, h4, h5, h6 {
+   text-align: center;
+   font-family: 'Oswald', sans-serif;
+ }
+
+ p {
+   font-size: 1.25em;
+ }
+
+ h2 {
+   margin-bottom: 0.5em;
+   font-size: 4em;
+ }
+ .masthead {
+   display: block;
+   background: #444444;
+   color: #EFEFEF;
+   border-bottom: 1px solid #222222;
+ }
+
+.masthead:hover {
+  color: #EFEFEF;
+}
+
+.masthead h1 {
+  font-size: 5em;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #333333;
+}
+
+a:hover {
+  color: #6A6A6A;
+  text-decoration: none;
+}
+
+nav {
+  padding: 0.5em;
+  background: #111111;
+  border-bottom: 1px solid #00ffff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 0.5em;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  height: 50px;
+  background-color: #444444;
+  border-top: 1px solid #00ffff;
+  color: #EFEFEF;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+footer p {
+  margin-top: 1em;
+}
+
+p.subheading {
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.article h3, .article h4 {
+  text-align: left;
+}

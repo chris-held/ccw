@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @post.name %></h2>
+<p class="subheading"><%= @post.created_at %></p>
+<br/>
+<section>
+  <%= @post.content.html_safe %>
+</section>
+

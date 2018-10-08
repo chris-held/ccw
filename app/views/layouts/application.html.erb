@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding, Cooking, and WTF. A blog about 3 things</title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,600" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+    <div class="container">
+      <ul class="pull-right">
+        <li><a href="/coding">CODING</a></li>
+        <li><a href="/cooking">COOKING</a></li>
+        <li><a href="/wtf">WTF</a></li>
+      </ul>
+    </div>
+  </nav>
+  <a href="/" class="masthead">
+    <section class="container">
+    <h1>
+      coding &<br/>
+      cooking &<br/>
+      wtf
+    </h1>
+    <p> A blog about 3 things</p>
+    </section>
+  </a>
+  <section class="container">
+      <%= yield %>
+  </section>
+  </body>
+
+  <footer>
+    <p>Copyright 2018. Made with love in Sheboygan, WI.</p>
+  </footer>
+</html>
